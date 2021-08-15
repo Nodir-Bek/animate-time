@@ -53,7 +53,7 @@ const BatteryComponent = () => {
   }, []);
   return (
     <div className="batteryShape">
-      {showIcon ? <i class="fas fa-charging-station"></i> : ""}
+      {showIcon ? <i className="fas fa-charging-station"></i> : ""}
       <div className="batteryBorder">
         <div className="percent" style={{ width: `${percent}` }}>
           <div className="percentage">{percentage}</div>
