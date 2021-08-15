@@ -3,8 +3,7 @@ import "../Styles/Home.scss";
 import timeComponent, { TimeComponent } from "../components/timeComponent";
 
 const Home = () => {
-  const { hour, minute, seconds } = timeComponent();
-  const [time, setTime] = useState({ hour, minute, seconds });
+  const [time, setTime] = useState('');
 
   useEffect(() => {
     const timer = setInterval(() => {
